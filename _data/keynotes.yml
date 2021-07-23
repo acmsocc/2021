@@ -2,11 +2,11 @@ bailis:
   name: 'Peter Bailis (Sisu Data)'
   title: 'TBA'
   abstract: "TBA" 
-  bio1: "TBA"
+  bio1: "Peter is the CEO and Founder of Sisu Data. Before Sisu, Peter was an assistant professor of Computer Science at Stanford University, where he maintains an adjunct appointment. Peter received a Ph.D. from UC Berkeley and an A.B. from Harvard College, both in Computer Science."
  
 bhagawan:
   name: 'Ranjita Bhagawan (Microsoft Research)'
   title: 'TBA'
   abstract: "TBA"
-  bio1: "TBA"
+  bio1: "Ranjita Bhagwan is Senior Principal Researcher at Microsoft Research India. She has worked for more than a decade on applying machine learning to improve system reliability, security and performance. Recently, her work has focused on using data-driven approaches to improve cloud services and has led to several publications (including a best paper award at OSDI 2018), as well as several tools that are widely used by Microsoft’s services. She is the recipient of the 2020 ACM India Outstanding Contributions to Computing by a Woman Award and has chaired multiple top conferences in the fields of systems and networking. Ranjita received her PhD and MS in Electrical and Computer Engineering from University of California, San Diego and a BTech in Computer Science and Engineering from the Indian Institute of Technology, Kharagpur."
   
