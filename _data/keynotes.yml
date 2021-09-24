@@ -12,8 +12,8 @@ bailis:
  
 bhagawan:
   name: 'Ranjita Bhagawan (Microsoft Research)'
-  title: 'TBA'
-  abstract: "TBA"
+  title: 'Leveraging Data to Improve Cloud Services'
+  abstract: "Today’s cloud services are large, complex, and dynamic, often supporting billions of users.  Such a complex and dynamic environment poses several challenges such as ensuring fast and secure development and deployment, and prompt resolution of service disruptions. Nevertheless, new opportunities to address such challenges have emerged. Large-scale services generate petabytes of code, test, and usage-related data within just one day. This data can be harnessed to provide valuable insights to engineers on how to improve service performance, security and reliability. However, cherry-picking important information from such vast amounts of systems-related data proves to be a formidable task. Over the last few years, we have developed many analysis tools that leverage code, test logs and telemetry to address these challenges. In this talk, I will talk about our experience with building such tools, and describe our journey which started with determining the right problems to solve, making research contributions and ended with widespread deployment across Microsoft’s services."
   bio1: "Ranjita Bhagwan is Senior Principal Researcher at Microsoft Research India. She has worked for more than a decade on applying machine learning to improve system reliability, security and performance. Recently, her work has focused on using data-driven approaches to improve cloud services and has led to several publications (including a best paper award at OSDI 2018), as well as several tools that are widely used by Microsoft’s services. She is the recipient of the 2020 ACM India Outstanding Contributions to Computing by a Woman Award and has chaired multiple top conferences in the fields of systems and networking. Ranjita received her PhD and MS in Electrical and Computer Engineering from University of California, San Diego and a BTech in Computer Science and Engineering from the Indian Institute of Technology, Kharagpur."
   
 svore:
