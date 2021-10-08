@@ -17,6 +17,14 @@ day1:
 - end: 10:00 AM
   start: 9:00 AM
   talks: 
+  - authors:
+    title: 'Llama: A Heterogeneous & Serverless Framework for Auto-Tuning Video Analytics Pipelines'
+  - authors:
+    title: 'Lorien: Efficient Deep Learning Workloads Delivery'
+  - authors:
+    title: 'Elastic Hyperparameter Tuning on the Cloud'
+  - authors:
+    title: 'Siren: Byzantine-robust Federated Learning via Proactive Alarming'
   title: Session 1 (Efficient, Robust ML training and inference I)
   chair: 
 - end: 10:15 AM
@@ -26,6 +34,14 @@ day1:
 - end: 11:15 AM
   start: 10:15 AM
   talks: 
+  - authors:
+    title: 'Automating instrumentation choices for performance problems in distributed applications with VAIF'
+  - authors:
+    title: 'tprof: Performance profiling via structural aggregation and automated analysis of distributed systems traces'
+  - authors:
+    title: 'Cloud-Scale Runtime Verification of Serverless Applications'
+  - authors:
+    title: 'Building Reliable Cloud Services Using Coyote Actors'
   title: Session 2 (Tracing)
   chair: 
 - end: 11:30 AM
@@ -35,11 +51,23 @@ day1:
 - end: 12:15 PM
   start: 11:30 AM
   talks:
+  - authors:
+    title: 'Faa$T: A Transparent Auto-Scaling Cache for Serverless Applications'
+  - authors:
+    title: 'Atoll: A Scalable Low-Latency Serverless Platform'
+  - authors:
+    title: 'Kraken : Adaptive Container Provisioning for Deploying Dynamic DAG applications in Serverless platforms'
   title: Session 3 (Serverless platforms I)
   chair: 
 - end: 1:00 PM
   start: 12:15 PM
   talks:
+  - authors:
+    title: 'Mu: An Efficient, Fair and Responsive Serverless Framework for Resource-Constrained Edge Clouds'
+  - authors:
+    title: 'OneEdge: An Efficient Control Plane for Geo-Distributed Infrastructures'
+  - authors:
+    title: 'Portkey: Adaptive Key-Value Placement over Dynamic Edge Networks'
   title: Session 4 (Cloud paradigms at the edge)
   chair: 
 - end: 2:00 PM
@@ -57,6 +85,14 @@ day2:
 - end: 10:00 AM
   start: 9:00 AM
   talks: 
+  - authors:
+    title: 'Trisk: Task-Centric Data Stream Reconfiguration'
+  - authors:
+    title: 'Good Things Come to Those Who Wait: Optimizing Job Waiting in the Cloud'
+  - authors:
+    title: 'Mind the Gap: Broken Promises of CPU Reservations in Containerized Multi-tenant Clouds'
+  - authors:
+    title: 'George: Learning to Place Long-Lived Containers in Large Clusters with Operation Constraints'
   title: Session 5 (Improving cloud deployments for users)
   chair: 
 - end: 10:15 AM
@@ -66,6 +102,14 @@ day2:
 - end: 11:15 AM
   start: 10:15 AM
   talks: 
+  - authors:
+    title: 'Sayer: Using Implicit Feedback to Optimize System Policies'
+  - authors:
+    title: 'Iter8: Online Experimentation in the Cloud'
+  - authors:
+    title: 'Parallax: Hybrid Key-Value Placement in LSM-based Key-Value Stores'
+  - authors:
+    title: 'Provisioning Differentiated Last-Level Cache Allocations to VMs in Public Clouds'
   title: Session 6 (Helping users deploy cloud apps)
   chair: 
 - end: 11:30 AM
@@ -75,11 +119,23 @@ day2:
 - end: 12:00 PM
   start: 11:30 AM
   talks:
+  - authors:
+    title: 'Latency-Aware Dynamic Server and Cooling Capacity Provisioner for Data Centers'
+  - authors:
+    title: 'Enabling Sustainable Clouds: The Case for Virtualizing the Energy System (vision)'
   title: Session 7 (Energy awareness)
   chair: 
 - end: 1:00 PM
   start: 12:00 PM
   talks:
+  - authors:
+    title: 'OptDebug: Fault-Inducing Operation Isolation for Dataflow Applications'
+  - authors:
+    title: 'Falkirk Wheel: Rollback Recovery for Dataflow Systems'
+  - authors:
+    title: 'Service-Level Fault Injection Testing'
+  - authors:
+    title: 'Towards Reliable AI for Source Code Understanding (vision)'
   title: Session 8 (Fault tolerance and testing)
   chair: 
 - end: 2:00 PM
@@ -97,6 +153,14 @@ day3:
 - end: 10:00 AM
   start: 9:00 AM
   talks: 
+  - authors:
+    title: 'Characterizing Microservice Dependency and Performance: Alibaba Trace Analysis'
+  - authors:
+    title: 'SHOWAR: Right-Sizing And Efficient Scheduling of Microservices'
+  - authors:
+    title: 'Parslo: A Gradient Descent-based Approach for Near-optimal Partial SLO Allotment in Microservices'
+  - authors:
+    title: '3MileBeach: A Tracer with Teeth'
   title: Session 9 (Microservice management and scheduling)
   chair: 
 - end: 10:15 AM
@@ -115,11 +179,23 @@ day3:
 - end: 12:15 PM
   start: 11:30 AM
   talks:
+  - authors:
+    title: 'Version Reconciliation for Collaborative Databases'
+  - authors:
+    title: 'Scaling Blockchains Using Pipelined Execution and Sparse Peers'
+  - authors:
+    title: 'Fast and Accurate Optimizer for Query Processing over Knowledge Graphs'
   title: Session 10 (DB and query optimization)
   chair: 
 - end: 1:00 PM
   start: 12:15 PM
   talks:
+  - authors:
+    title: 'Secure Namespaced Kernel Audit for Containers'
+  - authors:
+    title: 'Lasagna: Accelerating Secure Deep Learning Inference in SGX-enabled Edge Cloud'
+  - authors:
+    title: 'Citadel: Protecting Data Privacy and Model Confidentiality for Collaborative Learning'
   title: Session 11 (Security monitoring and preservation)
   chair: 
 - end: 2:00 PM
@@ -137,6 +213,14 @@ day4:
 - end: 10:00 AM
   start: 9:00 AM
   talks: 
+  - authors:
+    title: 'Tell me when you are sleepy and what may wake you up! (vision)'
+  - authors:
+    title: 'ServerMore: Opportunistic Execution of Serverless Functions in the Cloud'
+  - authors:
+    title: 'Speedo: Fast dispatch and orchestration of serverless workflows'
+  - authors:
+    title: 'On Merits and Viability of Multi-Cloud Serverless (vision)'
   title: Session 12 (Serverless platforms II)
   chair: 
 - end: 10:15 AM
@@ -146,6 +230,14 @@ day4:
 - end: 11:15 AM
   start: 10:15 AM
   talks: 
+  - authors:
+    title: 'CHRONUS: A Novel Deadline-aware Scheduler for Deep Learning Training Jobs'
+  - authors:
+    title: 'Scrooge: A Cost-Effective Deep Learning Inference System'
+  - authors:
+    title: 'Morphling: Fast, Near-Optimal Auto-Configuration for Cloud-Native Model Serving'
+  - authors:
+    title: 'Clamor: Extending Functional Cluster Computing Frameworks with Fine-Grained Remote Memory Access'
   title: Session 13 (Efficient, Robust ML training and inference II)
   chair: 
 - end: 11:30 AM
