@@ -1,0 +1,155 @@
+day1:
+- end: 8:00 AM
+  start: 7:45 AM
+  talks: 
+  - authors:
+    - Carlo Curino (Microsoft)
+    - Georgia Koutrika (Athena Research Center)
+    - Ravi Netravali (Princeton University)
+  title: Welcome Session
+- end: 9:00 AM
+  start: 8:00 AM
+  title: Keynote 1
+  talks:
+  - authors:
+    - Aditya Akella (UT Austin)
+    title: 'Networking and Cloud: A Match Made in Heaven'  
+- end: 10:00 AM
+  start: 9:00 AM
+  talks: 
+  title: Session 1 (Efficient, Robust ML training and inference I)
+  chair: 
+- end: 10:15 AM
+  start: 10:00 AM
+  title: Break
+  talks: []
+- end: 11:15 AM
+  start: 10:15 AM
+  talks: 
+  title: Session 2 (Tracing)
+  chair: 
+- end: 11:30 AM
+  start: 11:15 AM
+  talks: []
+  title: Break
+- end: 12:15 PM
+  start: 11:30 AM
+  talks:
+  title: Session 3 (Serverless platforms I)
+  chair: 
+- end: 1:00 PM
+  start: 12:15 PM
+  talks:
+  title: Session 4 (Cloud paradigms at the edge)
+  chair: 
+- end: 2:00 PM
+  start: 1:00 PM
+  talks: []
+  title: Lunch  
+day2:
+- end: 9:00 AM
+  start: 8:00 AM
+  title: Keynote 2
+  talks:
+  - authors:
+    - Ranjita Bhagwan (Microsoft Research)
+    title: 'Leveraging Data to Improve Cloud Services'  
+- end: 10:00 AM
+  start: 9:00 AM
+  talks: 
+  title: Session 5 (Improving cloud deployments for users)
+  chair: 
+- end: 10:15 AM
+  start: 10:00 AM
+  title: Break
+  talks: []
+- end: 11:15 AM
+  start: 10:15 AM
+  talks: 
+  title: Session 6 (Helping users deploy cloud apps)
+  chair: 
+- end: 11:30 AM
+  start: 11:15 AM
+  talks: []
+  title: Break
+- end: 12:00 PM
+  start: 11:30 AM
+  talks:
+  title: Session 7 (Energy awareness)
+  chair: 
+- end: 1:00 PM
+  start: 12:00 PM
+  talks:
+  title: Session 8 (Fault tolerance and testing)
+  chair: 
+- end: 2:00 PM
+  start: 1:00 PM
+  talks: []
+  title: Lunch  
+day3:
+- end: 9:00 AM
+  start: 8:00 AM
+  title: Keynote 3
+  talks:
+  - authors:
+    - Krysta Svore (Microsoft)
+    title: ''  
+- end: 10:00 AM
+  start: 9:00 AM
+  talks: 
+  title: Session 9 (Microservice management and scheduling)
+  chair: 
+- end: 10:15 AM
+  start: 10:00 AM
+  title: Break
+  talks: []
+- end: 11:15 AM
+  start: 10:15 AM
+  talks: 
+  title: Award Announcement + Test of Time
+  chair: 
+- end: 11:30 AM
+  start: 11:15 AM
+  talks: []
+  title: Break
+- end: 12:15 PM
+  start: 11:30 AM
+  talks:
+  title: Session 10 (DB and query optimization)
+  chair: 
+- end: 1:00 PM
+  start: 12:15 PM
+  talks:
+  title: Session 11 (Security monitoring and preservation)
+  chair: 
+- end: 2:00 PM
+  start: 1:00 PM
+  talks: []
+  title: Lunch  
+day4:
+- end: 9:00 AM
+  start: 8:00 AM
+  title: Keynote 4
+  talks:
+  - authors:
+    - Peter Bailis (Sisu Data)
+    title: 'The Future of Cloud Data: Challenges and Research Opportunities'  
+- end: 10:00 AM
+  start: 9:00 AM
+  talks: 
+  title: Session 12 (Serverless platforms II)
+  chair: 
+- end: 10:15 AM
+  start: 10:00 AM
+  title: Break
+  talks: []
+- end: 11:15 AM
+  start: 10:15 AM
+  talks: 
+  title: Session 13 (Efficient, Robust ML training and inference II)
+  chair: 
+- end: 11:30 AM
+  start: 11:15 AM
+  talks: []
+  title: Panel
+
