@@ -1,11 +1,12 @@
 day1:
 - end: 8:00 AM
-  start: 7:45 AM
+  start: 7:40 AM
   talks: 
   - authors:
     - Carlo Curino (Microsoft)
     - Georgia Koutrika (Athena Research Center)
     - Ravi Netravali (Princeton University)
+    - Neeraja Yadwadkar (Stanford University)
   title: Welcome Session
 - end: 9:00 AM
   start: 8:00 AM
@@ -210,10 +211,9 @@ day2:
     - Sang Hoon Kim (Columbia University)
     - Mihir Nanavati (Twitter)
     - Junchen Jiang (University of Chicago)
-    - Siddhartha Sen
-    - Aleksandrs Slivkins
-    - Amit Sharma
-    - Mathias Lecuyer (Microsoft Research)
+    - Siddhartha Sen (Microsoft Research)
+    - Aleksandrs Slivkins (Microsoft Research)
+    - Amit Sharma (Microsoft Research)
     title: 'Sayer: Using Implicit Feedback to Optimize System Policies'
   - authors:
     - Mert Toslali (Boston University)
@@ -374,20 +374,19 @@ day3:
   start: 12:15 PM
   talks:
   - authors:
-    - Nalin Ranjan (Princeton University)
-    - Zechao Shang (Snowflake Inc.)
-    - Sanjay Krishnan
-    - Aaron E. Elmore (University of Chicago)
+    - Soo Yee Lim (University of British Columbia)
+    - Bogdan Stelea (University of Bristol)
+    - Xueyuan Han (Harvard University)
+    - Thomas Pasquier (University of British Columbia)
     title: 'Secure Namespaced Kernel Audit for Containers'
   - authors:
-    - Yuepeng Li
+    - Yuepeng Li (China University of Geosciences, Wuhan, China)
     - Deze Zeng (China University of Geosciences, Wuhan, China)
     - Lin Gu (Huazhong University of Science and Technology)
     - Quan Chen (Shanghai Jiao Tong University)
     - Song Guo (Hong Kong Polytechnic University)
     - Albert Zomaya (The University of Sydney)
     - Minyi Guo (Shanghai Jiao Tong University)
-    - Yuepeng Li (China University of Geosciences, Wuhan, China)
     title: 'Lasagna: Accelerating Secure Deep Learning Inference in SGX-enabled Edge Cloud'
   - authors:
     - Chengliang Zhang
