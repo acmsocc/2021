@@ -1,13 +1,18 @@
 day1:
-- end: 8:00 AM
+- end: 7:50 AM
   start: 7:40 AM
   talks: 
   - authors:
     - Carlo Curino (Microsoft)
     - Georgia Koutrika (Athena Research Center)
     - Ravi Netravali (Princeton University)
-    - Neeraja Yadwadkar (Stanford University)
   title: Welcome Session
+- end: 8:00 AM
+  start: 7:50 AM
+  talks: 
+  - authors:
+    - Neeraja Yadwadkar (VMware Research and UT Austin)
+  title: D&amp;I at SoCC 2021
 - end: 9:00 AM
   start: 8:00 AM
   title: Keynote 1
