@@ -394,13 +394,13 @@ day3:
     - Minyi Guo (Shanghai Jiao Tong University)
     title: 'Lasagna: Accelerating Secure Deep Learning Inference in SGX-enabled Edge Cloud'
   - authors:
-    - Chengliang Zhang
-    - Junzhe Xia
-    - Baichen Yang
-    - Huancheng Puyang
+    - Chengliang Zhang (Hong Kong University of Science and Technology)
+    - Junzhe Xia (Hong Kong University of Science and Technology)
+    - Baichen Yang (Hong Kong University of Science and Technology)
+    - Huancheng Puyang (Hong Kong University of Science and Technology)
     - Wei Wang (Hong Kong University of Science and Technology)
-    - Ruichuan Chen
-    - Istemi Ekin Akkus
+    - Ruichuan Chen (Nokia Bell Labs)
+    - Istemi Ekin Akkus (Nokia Bell Labs)
     - Paarijaat Aditya (Nokia Bell Labs)
     - Feng Yan (University of Nevada, Reno) 
     title: 'Citadel: Protecting Data Privacy and Model Confidentiality for Collaborative Learning'
@@ -426,7 +426,6 @@ day4:
     - Antonio Barbalace (ICSA, University of Edinburgh)
     - Alain Tchana (ENS Lyon, France)
     - Gilles Muller (INRIA)
-    - MVONDO DJOB BARBE THYSTERE (LIG)
     title: 'Tell me when you are sleepy and what may wake you up! (vision)'
   - authors:
     - Amoghavarsha Suresh
