@@ -104,14 +104,14 @@ day1:
   talks:
   - authors:
     - Francisco Romero (Stanford University)
-    - Gohar Irfan Chaudhry (Microsoft Azure)
+    - Gohar Irfan Chaudhry (Microsoft Research)
     - Inigo Goiri (Microsoft Research)
     - Pragna Gopa (Microsoft Azure)
     - Paul Batum (Microsoft Azure)
-    - Neeraja J. Yadwadkar (Stanford University)
+    - Neeraja Yadwadkar (Stanford University)
+    - Rodrigo Fonseca (Microsoft Research)
     - Christos Kozyrakis (Stanford University)
     - Ricardo Bianchini (Microsoft Research)
-    - Rodrigo Fonseca (Microsoft Research)
     title: 'Faa$T: A Transparent Auto-Scaling Cache for Serverless Applications'
   - authors:
     - Arjun Singhvi (University of Wisconsin - Madison)
