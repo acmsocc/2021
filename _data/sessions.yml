@@ -308,7 +308,7 @@ day3:
   talks:
   - authors:
     - Krysta Svore (Microsoft)
-    title: ''  
+    title: 'Accelerating the cloud with quantum'
 - end: 10:00 AM
   start: 9:00 AM
   talks: 
@@ -373,7 +373,7 @@ day3:
     - Yubin Xia (Shanghai Jiao Tong University)
     title: 'Fast and Accurate Optimizer for Query Processing over Knowledge Graphs'
   title: Session 10 (DB and query optimization)
-  chair: Venkatesh Emani, Microsoft Gray Systems Lab  
+  chair: Venkatesh Emani, Microsoft Gray Systems Lab (virtual) 
 - end: 1:00 PM
   start: 12:15 PM
   talks:
