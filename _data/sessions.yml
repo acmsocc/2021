@@ -301,6 +301,11 @@ day2:
   start: 1:00 PM
   talks: []
   title: Lunch  
+- end: 8:00 PM
+  start: 6:30 PM
+  talks: 
+  - authors: Visions Room - 28th floor 
+  title: Conference Banquet 
 day3:
 - end: 9:00 AM
   start: 8:00 AM
