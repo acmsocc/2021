@@ -1,0 +1,1604 @@
+<html xmlns:bkstg="http://www.atypon.com/backstage-ns" xmlns:urlutil="java:com.atypon.literatum.customization.UrlUtil" xmlns:pxje="java:com.atypon.frontend.services.impl.PassportXslJavaExtentions">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="Content-Style-Type" content="text/css">
+      <style type="text/css">
+            #DLtoc {
+            font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+            }
+
+            #DLheader {
+            }
+            #DLheader h1 {
+            font-size:16px;
+            }
+
+            #DLcontent {
+            font-size:12px;
+            }
+            #DLcontent h2 {
+            font-size:14px;
+            margin-bottom:5px;
+            }
+            #DLcontent h3 {
+            font-size:12px;
+            padding-left:20px;
+            margin-bottom:0px;
+            }
+
+            #DLcontent ul{
+            margin-top:0px;
+            margin-bottom:0px;
+            }
+
+            .DLauthors li{
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+            }
+
+            .DLauthors li:after{
+            content:",";
+            }
+            .DLauthors li.nameList.Last:after{
+            content:"";
+            }
+
+            .DLabstract {
+            padding-left:40px;
+            padding-right:20px;
+            display:block;
+            }
+
+            .DLformats li{
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+            }
+
+            .DLformats li:after{
+            content:",";
+            }
+            .DLformats li.formatList.Last:after{
+            content:"";
+            }
+
+            .DLlogo {
+            vertical-align:middle;
+            padding-right:5px;
+            border:none;
+            }
+
+            .DLcitLink {
+            margin-left:20px;
+            }
+
+            .DLtitleLink {
+            margin-left:20px;
+            }
+
+            .DLotherLink {
+            margin-left:0px;
+            }
+
+        </style>
+      <title>SoCC '21: Proceedings of the ACM Symposium on Cloud Computing</title>
+   </head>
+   <body>
+      <div id="DLtoc">
+         <div id="DLheader">
+            <h1>SoCC '21: Proceedings of the ACM Symposium on Cloud Computing</h1><a class="DLcitLink" title="Go to the ACM Digital Library for additional information about this proceeding" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/proceedings/10.1145/3472883"><img class="DLlogo" alt="Digital Library logo" height="30" src="https://dl.acm.org/specs/products/acm/releasedAssets/images/footer-logo1.png">
+               Full Citation in the ACM Digital Library
+               </a></div>
+         <div id="DLcontent">
+            <h2>SESSION: Efficient, Robust ML Training and Inference I</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3486972">Llama: A Heterogeneous &amp; Serverless Framework for Auto-Tuning Video Analytics Pipelines</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Francisco Romero</li>
+               <li class="nameList">Mark Zhao</li>
+               <li class="nameList">Neeraja J. Yadwadkar</li>
+               <li class="nameList Last">Christos Kozyrakis</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The proliferation of camera-enabled devices and large video repositories has led to
+                     a diverse set of video analytics applications. These applications rely on video pipelines,
+                     represented as DAGs of operations, to transform videos, process extracted metadata,
+                     and answer questions like, "Is this intersection congested?" The latency and resource
+                     efficiency of pipelines can be optimized using configurable knobs for each operation
+                     (e.g., sampling rate, batch size, or type of hardware used). However, determining
+                     efficient configurations is challenging because (a) the configuration search space
+                     is exponentially large, and (b) the optimal configuration depends on users' desired
+                     latency and cost targets, (c) input video contents may exercise different paths in
+                     the DAG and produce a variable amount intermediate results. Existing video analytics
+                     and processing systems leave it to the users to manually configure operations and
+                     select hardware resources.</p> 
+                  <p>We present Llama: a heterogeneous and serverless framework for auto-tuning video pipelines.
+                     Given an end-to-end latency target, Llama optimizes for cost efficiency by (a) calculating
+                     a latency target for each operation invocation, and (b) dynamically running a cost-based
+                     optimizer to assign configurations across heterogeneous hardware that best meet the
+                     calculated per-invocation latency target. This makes the problem of auto-tuning large
+                     video pipelines tractable and allows us to handle input-dependent behavior, conditional
+                     branches in the DAG, and execution variability. We describe the algorithms in Llama
+                     and evaluate it on a cloud platform using serverless CPU and GPU resources. We show
+                     that compared to state-of-the-art cluster and serverless video analytics and processing
+                     systems, Llama achieves 7.8x lower latency and 16x cost reduction on average.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3486973">Lorien: Efficient Deep Learning Workloads Delivery</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Cody Hao Yu</li>
+               <li class="nameList">Xingjian Shi</li>
+               <li class="nameList">Haichen Shen</li>
+               <li class="nameList">Zhi Chen</li>
+               <li class="nameList">Mu Li</li>
+               <li class="nameList Last">Yida Wang</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Modern deep learning systems embrace the compilation idea to self generate code of
+                     a deep learning model to catch up the rapidly changed deep learning operators and
+                     newly emerged hardware platforms. The performance of the self-generated code is guaranteed
+                     via auto-tuning frameworks which normally take a long time to find proper execution
+                     schedules for the given operators, which hurts both user experiences and time-to-the-market
+                     in terms of model developments and deployments.</p> 
+                  <p>To efficiently deliver a high-performance schedule upon requests, in this paper, we
+                     present Lorien, an open source infrastructure, to tune the operators and orchestrate
+                     the tuned schedules in a systematic way. Lorien is designed to be extensible to state-of-the-art
+                     auto-tuning frameworks, and scalable to coordinate a number of compute resources for
+                     its tuning tasks with fault tolerance. We leveraged Lorien to extract thousands of
+                     operator-level tuning tasks from 29 widely-used models in Gluon CV model zoo [22],
+                     and tune them on x86 CPU, ARM CPU, and NVIDIA GPU to construct a database for queries.
+                     In addition, to deliver reasonably high performance schedules for unseen workloads
+                     in seconds or minutes, Lorien integrates an AutoML solution to train a performance
+                     cost model with collected large-scale datasets. Our evaluation shows that the AutoML-based
+                     solution is accurate enough to enable zero-shot tuning, which does not fine-tune the
+                     cost model during tuning nor perform on-device measurements, and is able to find decent
+                     schedules with at least 10x less time than existing auto-tuning frameworks.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3486989">Elastic Hyperparameter Tuning on the Cloud</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Lisa Dunlap</li>
+               <li class="nameList">Kirthevasan Kandasamy</li>
+               <li class="nameList">Ujval Misra</li>
+               <li class="nameList">Richard Liaw</li>
+               <li class="nameList">Michael Jordan</li>
+               <li class="nameList">Ion Stoica</li>
+               <li class="nameList Last">Joseph E. Gonzalez</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Hyperparameter tuning is a necessary step in training and deploying machine learning
+                     models. Most prior work on hyperparameter tuning has studied methods for maximizing
+                     model accuracy under a time constraint, assuming a fixed cluster size. While this
+                     is appropriate in data center environments, the increased deployment of machine learning
+                     workloads in cloud settings necessitates studying hyperparameter tuning with an elastic
+                     cluster size and time and monetary budgets. While recent work has leveraged the elasticity
+                     of the cloud to minimize the execution cost of a pre-determined hyperparameter tuning
+                     job originally designed for fixed-cluster sizes, they do not aim to maximize accuracy.</p> 
+                  <p>In this work, we aim to maximize accuracy given time and cost constraints. We introduce
+                     SEER---Sequential Elimination with Elastic Resources, an algorithm that tests different
+                     hyperparameter values in the beginning and maintains varying degrees of parallelism
+                     among the promising configurations to ensure that they are trained sufficiently before
+                     the deadline. Unlike fixed cluster size methods, it is able to exploit the flexibility
+                     in resource allocation the elastic setting has to offer in order to avoid undesirable
+                     effects of sublinear scaling. Furthermore, SEER can be easily integrated into existing
+                     systems and makes minimal assumptions about the workload. On a suite of benchmarks,
+                     we demonstrate that SEER outperforms both existing methods for hyperparameter tuning
+                     on a fixed cluster as well as naive extensions of these algorithms to the cloud setting.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3486990">Siren: Byzantine-robust Federated Learning via Proactive Alarming</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Hanxi Guo</li>
+               <li class="nameList">Hao Wang</li>
+               <li class="nameList">Tao Song</li>
+               <li class="nameList">Yang Hua</li>
+               <li class="nameList">Zhangcheng Lv</li>
+               <li class="nameList">Xiulang Jin</li>
+               <li class="nameList">Zhengui Xue</li>
+               <li class="nameList">Ruhui Ma</li>
+               <li class="nameList Last">Haibing Guan</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>With the popularity of machine learning on many applications, data privacy has become
+                     a severe issue when machine learning is applied in the real world. Federated learning
+                     (FL), an emerging paradigm in machine learning, aims to train a centralized model
+                     while distributing training data among a large number of clients in order to avoid
+                     data privacy leaking, which has attracted great attention recently. However, the distributed
+                     training scheme in FL is susceptible to different kinds of attacks. Existing defense
+                     systems mainly utilize model weight analysis to identify malicious clients with many
+                     limitations. For example, some defense systems must know the exact number of malicious
+                     clients beforehand, which can be easily bypassed by well-designed attack methods and
+                     become impractical for real-world scenarios.</p> 
+                  <p>This paper presents Siren, a Byzantine-robust federated learning system via a proactive
+                     alarming mechanism. Compared with current Byzantine-robust aggregation rules, Siren
+                     can defend against attacks from a higher proportion of malicious clients in the system
+                     while keeping the global model performing normally. Extensive experiments against
+                     different attack methods are conducted under diverse settings on both independent
+                     and identically distributed (IID) and non-IID data. The experimental results illustrate
+                     the effectiveness of Siren comparing with several state-of-the-art defense methods.</p>
+                  	</div>
+            </div>
+            						
+            					
+            <h2>SESSION: Tracing</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3487000">Automating instrumentation choices for performance problems in distributed applications
+                  with VAIF</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Mert Toslali</li>
+               <li class="nameList">Emre Ates</li>
+               <li class="nameList">Alex Ellis</li>
+               <li class="nameList">Zhaoqi Zhang</li>
+               <li class="nameList">Darby Huye</li>
+               <li class="nameList">Lan Liu</li>
+               <li class="nameList">Samantha Puterman</li>
+               <li class="nameList">Ayse K. Coskun</li>
+               <li class="nameList Last">Raja R. Sambasivan</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Developers use logs to diagnose performance problems in distributed applications.
+                     However, it is difficult to know a priori where logs are needed and what information
+                     in them is needed to help diagnose problems that may occur in the future. We present
+                     the Variance-driven Automated Instrumentation Framework (VAIF), which runs alongside
+                     distributed applications. In response to newly-observed performance problems, VAIF
+                     automatically searches the space of possible instrumentation choices to enable the
+                     logs needed to help diagnose them. To work, VAIF combines distributed tracing (an
+                     enhanced form of logging) with insights about how response-time variance can be decomposed
+                     on the critical-path portions of requests' traces. We evaluate VAIF by using it to
+                     localize performance problems in OpenStack and HDFS. We show that VAIF can localize
+                     problems related to slow code paths, resource contention, and problematic third-party
+                     code while enabling only 3-34% of the total tracing instrumentation.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3486994">tprof: Performance profiling via structural aggregation and automated analysis of distributed
+                  systems traces</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Lexiang Huang</li>
+               <li class="nameList Last">Timothy Zhu</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The traditional approach for performance debugging relies upon performance profilers
+                     (e.g., gprof, VTune) that provide average function runtime information. These aggregate
+                     statistics help identify slow regions affecting the entire workload, but they are
+                     ill-suited for identifying slow regions that only impact a fraction of the workload,
+                     such as tail latency effects. This paper takes a new approach to performance profiling
+                     by utilizing distributed tracing systems (e.g., Dapper, Zipkin, Jaeger). Since traces
+                     provide detailed timing information on a per-request basis, it is possible to group
+                     and aggregate tracing data in many different ways to identify the slow parts of the
+                     system. Our new approach to trace aggregation uses the structure embedded within traces
+                     to hierarchically group similar traces and calculate increasingly detailed aggregate
+                     statistics based on how the traces are grouped. We also develop an automated tool
+                     for analyzing the hierarchy of statistics to identify the most likely performance
+                     issues. Our case study across two complex distributed systems illustrates how our
+                     tool is able to find multiple performance issues that lead to 10x and 28x performance
+                     improvements in terms of average and tail latency, respectively. Our comparison with
+                     a state-of-the-art industry tool shows that our tool can pinpoint performance slowdowns
+                     more accurately than current approaches.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3486977">Cloud-Scale Runtime Verification of Serverless Applications</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Kalev Alpernas</li>
+               <li class="nameList">Aurojit Panda</li>
+               <li class="nameList">Leonid Ryzhyk</li>
+               <li class="nameList Last">Mooly Sagiv</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Serverless platforms aim to simplify the deployment, scaling, and management of cloud
+                     applications. Serverless applications are inherently distributed, and are executed
+                     using shortlived ephemeral processes. The use of short-lived ephemeral processes simplifies
+                     application scaling and management, but also means that existing approaches to monitoring
+                     distributed systems and detecting bugs cannot be applied to serverless applications.
+                     In this paper we propose Watchtower, a framework that enables runtime monitoring of
+                     serverless applications. Watchtower takes program properties as inputs, and can detect
+                     cases where applications violate these properties. We design Watchtower to minimize
+                     application changes, and to scale at the same rate as the application. We achieve
+                     the former by instrumenting libraries rather than application code, and the latter
+                     by structuring Watchtower as a serverless application. Once a bug is found, developers
+                     can use the Watchtower debugger to identify and address the root cause of the bug.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3486983">Building Reliable Cloud Services Using Coyote Actors</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Pantazis Deligiannis</li>
+               <li class="nameList">Narayanan Ganapathy</li>
+               <li class="nameList">Akash Lal</li>
+               <li class="nameList Last">Shaz Qadeer</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Cloud services must typically be distributed across a large number of machines in
+                     order to make use of multiple compute and storage resources. This opens the programmer
+                     to several sources of complexity such as concurrency, order of message delivery, lossy
+                     network, timeouts and failures, all of which impose a high cognitive burden. This
+                     paper presents evidence that technology inspired by formal-methods, delivered as part
+                     of a programming framework, can help address these challenges. In particular, we describe
+                     the experience of several engineering teams in Microsoft Azure that used the open-source
+                     Coyote Actor programming framework to build multiple reliable cloud services. Coyote
+                     Actors impose a principled design pattern that allows writing formal specifications
+                     alongside production code that can be systematically tested, without deviating from
+                     routine engineering practices. Engineering teams that have been using Coyote have
+                     reported dramatically increased productivity (in time taken to push new features to
+                     production) as well as services that have been running live for months without any
+                     issues in features developed and tested with Coyote.</p>
+                  	</div>
+            </div>
+            						
+            					
+            <h2>SESSION: Serverless platforms I</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3486974">Faa$T: A Transparent Auto-Scaling Cache for Serverless Applications</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Francisco Romero</li>
+               <li class="nameList">Gohar Irfan Chaudhry</li>
+               <li class="nameList">Íñigo Goiri</li>
+               <li class="nameList">Pragna Gopa</li>
+               <li class="nameList">Paul Batum</li>
+               <li class="nameList">Neeraja J. Yadwadkar</li>
+               <li class="nameList">Rodrigo Fonseca</li>
+               <li class="nameList">Christos Kozyrakis</li>
+               <li class="nameList Last">Ricardo Bianchini</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Function-as-a-Service (FaaS) has become an increasingly popular way for users to deploy
+                     their applications without the burden of managing the underlying infrastructure. However,
+                     existing FaaS platforms rely on remote storage to maintain state, limiting the set
+                     of applications that can be run efficiently. Recent caching work for FaaS platforms
+                     has tried to address this problem, but has fallen short: it disregards the widely
+                     different characteristics of FaaS applications, does not scale the cache based on
+                     data access patterns, or requires changes to applications. To address these limitations,
+                     we present Faa$T, a transparent auto-scaling distributed cache for serverless applications.
+                     Each application gets its own cache. After a function executes and the application
+                     becomes inactive, the cache is unloaded from memory with the application. Upon reloading
+                     for the next invocation, Faa$T pre-warms the cache with objects likely to be accessed.
+                     In addition to traditional compute-based scaling, Faa$T scales based on working set
+                     and object sizes to manage cache space and I/O bandwidth. We motivate our design with
+                     a comprehensive study of data access patterns on Azure Functions. We implement Faa$T
+                     for Azure Functions, and show that Faa$T can improve performance by up to 92% (57%
+                     on average) for challenging applications, and reduce cost for most users compared
+                     to state-of-the-art caching systems, i.e. the cost of having to stand up additional
+                     serverful resources.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3486981">Atoll: A Scalable Low-Latency Serverless Platform</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Arjun Singhvi</li>
+               <li class="nameList">Arjun Balasubramanian</li>
+               <li class="nameList">Kevin Houck</li>
+               <li class="nameList">Mohammed Danish Shaikh</li>
+               <li class="nameList">Shivaram Venkataraman</li>
+               <li class="nameList Last">Aditya Akella</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>With user-facing apps adopting serverless computing, good latency performance of serverless
+                     platforms has become a strong fundamental requirement. However, it is difficult to
+                     achieve this on platforms today due to the design of their underlying control and
+                     data planes that are particularly ill-suited to short-lived functions with unpredictable
+                     arrival patterns. We present Atoll, a serverless platform, that overcomes the challenges
+                     via a ground-up redesign of the control and data planes. In Atoll, each app is associated
+                     with a latency deadline. Atoll achieves its per-app request latency goals by: (a)
+                     partitioning the cluster into (semi-global scheduler, worker pool) pairs, (b) performing
+                     deadline-aware scheduling and proactive sandbox allocation, and (c) using a load balancing
+                     layer to do sandbox-aware routing, and automatically scale the semi-global schedulers
+                     per app. Our results show that Atoll reduces missed deadlines by ~66x and tail latencies
+                     by ~3x compared to state-of-the-art alternatives.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3486992">Kraken: Adaptive Container Provisioning for Deploying Dynamic DAGs in Serverless Platforms</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Vivek M. Bhasi</li>
+               <li class="nameList">Jashwant Raj Gunasekaran</li>
+               <li class="nameList">Prashanth Thinakaran</li>
+               <li class="nameList">Cyan Subhra Mishra</li>
+               <li class="nameList">Mahmut Taylan Kandemir</li>
+               <li class="nameList Last">Chita Das</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The growing popularity of microservices has led to the proliferation of online cloud
+                     service-based applications, which are typically modelled as Directed Acyclic Graphs
+                     (DAGs) comprising of tens to hundreds of microservices. The vast majority of these
+                     applications are user-facing, and hence, have stringent SLO requirements. Serverless
+                     functions, having short resource provisioning times and instant scalability, are suitable
+                     candidates for developing such latency-critical applications. However, existing serverless
+                     providers are unaware of the workflow characteristics of application DAGs, leading
+                     to container over-provisioning in many cases. This is further exacerbated in the case
+                     of dynamic DAGs, where the function chain for an application is not known a priori.
+                     Motivated by these observations, we propose Kraken, a workflow-aware resource management
+                     framework that minimizes the number of containers provisioned for an application DAG
+                     while ensuring SLO-compliance. We design and implement Kraken on OpenFaaS and evaluate
+                     it on a multi-node Kubernetes-managed cluster. Our extensive experimental evaluation
+                     using DeathStarbench workload suite and real-world traces demonstrates that Kraken
+                     spawns up to 76% fewer containers, thereby improving container utilization and saving
+                     cluster-wide energy by up to 4x and 48%, respectively, when compared to state-of-the
+                     art schedulers employed in serverless platforms.</p>
+                  	</div>
+            </div>
+            						
+            					
+            <h2>SESSION: Cloud Paradigms at the Edge</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3487014">Mu: An Efficient, Fair and Responsive Serverless Framework for Resource-Constrained Edge
+                  Clouds</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Viyom Mittal</li>
+               <li class="nameList">Shixiong Qi</li>
+               <li class="nameList">Ratnadeep Bhattacharya</li>
+               <li class="nameList">Xiaosu Lyu</li>
+               <li class="nameList">Junfeng Li</li>
+               <li class="nameList">Sameer G. Kulkarni</li>
+               <li class="nameList">Dan Li</li>
+               <li class="nameList">Jinho Hwang</li>
+               <li class="nameList">K. K. Ramakrishnan</li>
+               <li class="nameList Last">Timothy Wood</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Serverless computing platforms simplify development, deployment, and automated management
+                     of modular software functions. However, existing serverless platforms typically assume
+                     an over-provisioned cloud, making them a poor fit for Edge Computing environments
+                     where resources are scarce. In this paper we propose a redesigned serverless platform
+                     that comprehensively tackles the key challenges for serverless functions in a resource
+                     constrained Edge Cloud.</p> 
+                  <p>Our Mu platform cleanly integrates the core resource management components of a serverless
+                     platform: autoscaling, load balancing, and placement. Each worker node in Mu transparently
+                     propagates metrics such as service rate and queue length in response headers, feeding
+                     this information to the load balancing system so that it can better route requests,
+                     and to our autoscaler to anticipate workload fluctuations and proactively meet SLOs.
+                     Data from the Autoscaler is then used by the placement engine to account for heterogeneity
+                     and fairness across competing functions, ensuring overall resource efficiency, and
+                     minimizing resource fragmentation. We implement our design as a set of extensions
+                     to the Knative serverless platform and demonstrate its improvements in terms of resource
+                     efficiency, fairness, and response time.</p> 
+                  <p>Evaluating Mu, shows that it improves fairness by more than 2x over the default Kubernetes
+                     placement engine, improves 99th percentile response times by 62% through better load
+                     balancing, reduces SLO violations and resource consumption by pro-active and precise
+                     autoscaling. Mu reduces the average number of pods required by more than ~15% for
+                     a set of real Azure workloads.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3487008">OneEdge: An Efficient Control Plane for Geo-Distributed Infrastructures</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Enrique Saurez</li>
+               <li class="nameList">Harshit Gupta</li>
+               <li class="nameList">Alexandros Daglis</li>
+               <li class="nameList Last">Umakishore Ramachandran</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Resource management for geo-distributed infrastructures is challenging due to the
+                     scarcity and non-uniformity of edge resources, as well as the high client mobility
+                     and workload surges inherent to situation awareness applications. Due to their centralized
+                     nature, state-of-the-art schedulers that work well in datacenters lack the performance
+                     and feature requirements of such applications. We present OneEdge, a hybrid control
+                     plane that enables autonomous decision-making at edge sites for localized, rapid single-site
+                     application deployment. Edge sites handle mobility, churn, and load spikes, by cooperating
+                     with a centralized controller that allows coordinated multi-site scheduling and dynamic
+                     reconfiguration.</p> 
+                  <p>OneEdge's scheduling decisions are driven by each application's end-to-end service
+                     level objective (E2E SLO) as well as the specific requirements of situation awareness
+                     applications. OneEdge's novel distributed state management combines autonomous decision-making
+                     at the edge sites for rapid localized resource allocations with decision-making at
+                     the central controller when multi-site application deployment is needed.</p> 
+                  <p>Using a mix of applications on multi-region Azure instances, we show that, in contrast
+                     to centralized or fully distributed control planes, OneEdge caters to the unique requirements
+                     of situation awareness applications. Compared to a centralized control plane, OneEdge
+                     reduces deployment latency by 66% for single-site applications, without compromising
+                     E2E SLOs.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3487004">Portkey: Adaptive Key-Value Placement over Dynamic Edge Networks</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Joseph Noor</li>
+               <li class="nameList">Mani Srivastava</li>
+               <li class="nameList Last">Ravi Netravali</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Owing to a need for low latency data accesses, emerging IoT and mobile applications
+                     commonly require distributed data stores (e.g., key-value or KV stores) to operate
+                     entirely at the network's edge. Unfortunately, existing KV stores employ randomized
+                     data placement policies (e.g., consistent hashing) that ignore the client mobility
+                     and resulting variance in client-server latencies that are inherent to edge applications---the
+                     effect is largely suboptimal and inefficient data placement. We present Portkey, a
+                     distributed KV store that dynamically adapts data placement according to time-varying
+                     client mobility and data access patterns. The key insight with Portkey is to lean
+                     into the inherent mobility and prioritize rapid but approximate placement decisions
+                     over delayed optimal ones. Doing so enables the efficient tracking of client-server
+                     latencies despite edge resource constraints, and the use of greedy placement heuristics
+                     that are self-correcting over short timescales. Results with a realistic autonomous
+                     vehicle dataset and two small-scale deployments reveal that Portkey reduces average
+                     and tail request latency by 21-82% and 26-77% compared to existing placement strategies.</p>
+                  	</div>
+            </div>
+            						
+            					
+            <h2>SESSION: Improving Cloud Deployments for Users</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3487010">Trisk: Task-Centric Data Stream Reconfiguration</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Yancan Mao</li>
+               <li class="nameList">Yuan Huang</li>
+               <li class="nameList">Runxin Tian</li>
+               <li class="nameList">Xin Wang</li>
+               <li class="nameList Last">Richard T. B. Ma</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Due to the long-run and unpredictable nature of stream processing, any statically
+                     configuredexecution of stream jobs fails to process data in a timely and efficient
+                     manner. To achieve performance requirements, stream jobs need to be reconfigured dynamically.
+                     In this paper, we present Trisk, a control plane that support versatile reconfigurations
+                     while keeping high efficiency with easy-to-use programming APIs. Trisk enables versatile
+                     reconfigurations with usability based on a task-centric abstraction, and encapsulates
+                     primitive operations such that reconfigurations can be described by compositing the
+                     primitive operations on the abstraction. Trisk adopts a partial pause-and-resume design
+                     for efficiency, through which synchronization mechanisms in the native stream systems
+                     can further be leveraged. We implement Trisk on Apache Flink and demonstrate its usage
+                     and performance under realistic application scenarios. We show that Trisk executes
+                     reconfigurations with shorter completion time and comparable latency compared to a
+                     state-of-the-art fluid mechanism for state management.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3487007">Good Things Come to Those Who Wait: Optimizing Job Waiting in the Cloud</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Pradeep Ambati</li>
+               <li class="nameList">Noman Bashir</li>
+               <li class="nameList">David Irwin</li>
+               <li class="nameList Last">Prashant Shenoy</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Cloud-enabled schedulers execute jobs on either fixed resources or those acquired
+                     on demand from cloud platforms. Thus, these schedulers must define not only a scheduling
+                     policy, which selects which jobs run when fixed resources become available, but also
+                     a waiting policy, which selects which jobs wait for fixed resources when they are
+                     not available, rather than run on on-demand resources. As with scheduling policies,
+                     optimizing waiting policies requires a priori knowledge of job runtime. Unfortunately,
+                     prior work has shown that accurately predicting job runtime is challenging. In this
+                     paper, we show that optimizing job waiting in the cloud is possible without accurate
+                     job runtime predictions. To do so, we i) speculatively execute jobs on on-demand resources
+                     for a small time and cost to learn more about job runtime, and ii) develop a ML model
+                     to predict wait time from cluster state, which is more accurate and has less overhead
+                     than prior approaches that use job runtime predictions. We evaluate our approach on
+                     a year-long batch workload consisting of 14 million jobs, and show that it yields
+                     a cost and average wait time within 4% and 13%, respectively, of the optimal.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3486997">Mind the Gap: Broken Promises of CPU Reservations in Containerized Multi-tenant Clouds</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Li Liu</li>
+               <li class="nameList">Haoliang Wang</li>
+               <li class="nameList">An Wang</li>
+               <li class="nameList">Mengbai Xiao</li>
+               <li class="nameList">Yue Cheng</li>
+               <li class="nameList Last">Songqing Chen</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Containerization is becoming increasingly popular, but unfortunately, containers often
+                     fail to deliver the anticipated performance with the allocated resources. In this
+                     paper, we first demonstrate the performance variance and degradation are significant
+                     (by up to 5x) in a multi-tenant environment where containers are co-located. We then
+                     investigate the root cause of such performance degradation. Contrary to the common
+                     belief that such degradation is caused by resource contention and interference, we
+                     find that there is a gap between the amount of CPU a container reserves and actually
+                     gets. The root cause lies in the design choices of today's Linux scheduling mechanism,
+                     which we call Forced Runqueue Sharing and Phantom CPU Time. In fact, there are fundamental
+                     conflicts between the need to reserve CPU resources and Completely Fair Scheduler's
+                     work-conserving nature, and this contradiction prevents a container from fully utilizing
+                     its requested CPU resources. As a proof-of-concept, we implement a new resource configuration
+                     mechanism atop the widely used Kubernetes and Linux to demonstrate its potential benefits
+                     and shed light on future scheduler redesign. Our proof-of-concept, compared to the
+                     existing scheduler, improves the performance of both batch and interactive containerized
+                     apps by up to 5.6x and 13.7x.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3486971">George: Learning to Place Long-Lived Containers in Large Clusters with Operation Constraints</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Suyi Li</li>
+               <li class="nameList">Luping Wang</li>
+               <li class="nameList">Wei Wang</li>
+               <li class="nameList">Yinghao Yu</li>
+               <li class="nameList Last">Bo Li</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Online cloud services are widely deployed as Long-Running Applications (LRAs) hosted
+                     in containers. Placing LRA containers turns out to be particularly challenging due
+                     to the complex interference between co-located containers and the operation constraints
+                     in production clusters such as fault tolerance, disaster avoidance and incremental
+                     deployment. Existing schedulers typically provide APIs for operators to manually specify
+                     the container scheduling requirements and offer only qualitative scheduling guidelines
+                     for container placement. Such schedulers, do not perform well in terms of both performance
+                     and scale, while also requiring manual intervention.</p> 
+                  <p>In this work, we propose George, an end-to-end generalpurpose LRA scheduler by leveraging
+                     the state-of-the-art Reinforcement Learning (RL) techniques to intelligently schedule
+                     LRA containers. We present an optimal container placement formulation for the first
+                     time with the objective of maximizing container placement performance subject to a
+                     set of operation constraints. One fundamental challenge in scheduling is to categorically
+                     satisfy different operation constraints in practice; specifically, to guarantee hard
+                     constraints and ensure soft constraints violations within a pre-defined threshold.
+                     We design a novel projection-based proximal policy optimization (PPPO) algorithm in
+                     combination with an Integer Linear optimization technique to intelligently schedule
+                     LRA containers under operation constraints. In order to reduce the training time,
+                     we apply transfer learning technique by taking advantage of the similarity in different
+                     LRA scheduling events. We prove theoretically that our proposed algorithm is effective,
+                     stable, and safe. We implement George as a plug-in service in Docker Swarm. Our in-house
+                     cluster demonstrates that George can maximize the LRA performance while enforcing
+                     the hard constraints and the soft constraints with a pre-defined threshold. The experiments
+                     show that George improves LRA performance and scale tremendously by requiring less
+                     than 1 hour scheduling time in a large cluster with 2K containers and 700 machines,
+                     16x faster than existing schedulers. Compared with state-of-the-art alternatives,
+                     George also achieves 26% higher container performance with up to 70% lower constraint
+                     violation.</p>
+                  	</div>
+            </div>
+            						
+            					
+            <h2>SESSION: Helping Users Deploy Cloud Apps</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3487001">Sayer: Using Implicit Feedback to Optimize System Policies</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Mathias Lécuyer</li>
+               <li class="nameList">Sang Hoon Kim</li>
+               <li class="nameList">Mihir Nanavati</li>
+               <li class="nameList">Junchen Jiang</li>
+               <li class="nameList">Siddhartha Sen</li>
+               <li class="nameList">Aleksandrs Slivkins</li>
+               <li class="nameList Last">Amit Sharma</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>We observe that many system policies that make threshold decisions involving a resource
+                     (e.g., time, memory, cores) naturally reveal additional, or implicit feedback. For
+                     example, if a system waits X min for an event to occur, then it automatically learns
+                     what would have happened if it waited &lt; X min, because time has a cumulative property.
+                     This feedback tells us about alternative decisions, and can be used to improve the
+                     system policy. However, leveraging implicit feedback is difficult because it tends
+                     to be one-sided or incomplete, and may depend on the outcome of the event. As a result,
+                     existing practices for using feedback, such as simply incorporating it into a data-driven
+                     model, suffer from bias.</p> 
+                  <p>We develop a methodology, called Sayer, that leverages implicit feedback to evaluate
+                     and train new system policies. Sayer builds on two ideas from reinforcement learning---randomized
+                     exploration and unbiased counterfactual estimators---to leverage data collected by
+                     an existing policy to estimate the performance of new candidate policies, without
+                     actually deploying those policies. Sayer uses implicit exploration and implicit data
+                     augmentation to generate implicit feedback in an unbiased form, which is then used
+                     by an implicit counterfactual estimator to evaluate and train new policies. The key
+                     idea underlying these techniques is to assign implicit probabilities to decisions
+                     that are not actually taken but whose feedback can be inferred; these probabilities
+                     are carefully calculated to ensure statistical unbiasedness. We apply Sayer to two
+                     production scenarios in Azure, and show that it can evaluate arbitrary policies accurately,
+                     and train new policies that outperform the production policies.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3486984">Iter8: Online Experimentation in the Cloud</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Mert Toslali</li>
+               <li class="nameList">Srinivasan Parthasarathy</li>
+               <li class="nameList">Fabio Oliveira</li>
+               <li class="nameList">Hai Huang</li>
+               <li class="nameList Last">Ayse K. Coskun</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Online experimentation is an agile software development practice that plays an essential
+                     role in enabling rapid innovation. Existing solutions for online experimentation in
+                     Web and mobile applications are unsuitable for cloud applications. There is a need
+                     for rethinking online experimentation in the cloud to advance the state-of-the-art
+                     by considering the unique challenges posed by cloud environments.</p> 
+                  <p>In this paper, we introduce Iter8, an open-source system that enables practitioners
+                     to deliver code changes to cloud applications in an agile manner while minimizing
+                     risk. Iter8 embodies our novel mathematical formulation built on online Bayesian learning
+                     and multi-armed bandit algorithms to enable online experimentation tailored for the
+                     cloud, considering both SLOs and business concerns, unlike existing solutions. Using
+                     Iter8, practitioners can safely and rapidly orchestrate various types of online experiments,
+                     gain key insights into the behavior of cloud applications, and roll out the optimal
+                     versions in an automated and statistically rigorous manner.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3487012">Parallax: Hybrid Key-Value Placement in LSM-based Key-Value Stores</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Giorgos Xanthakis</li>
+               <li class="nameList">Giorgos Saloustros</li>
+               <li class="nameList">Nikos Batsaras</li>
+               <li class="nameList">Anastasios Papagiannis</li>
+               <li class="nameList Last">Angelos Bilas</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Key-value (KV) separation is a technique that introduces randomness in the I/O access
+                     patterns to reduce I/O amplification in LSM-based key-value stores. KV separation
+                     has a significant drawback that makes it less attractive: Delete and update operations
+                     in modern workloads result in frequent and expensive garbage collection (GC) in the
+                     value log.</p> 
+                  <p>In this paper, we design and implement Parallax, which proposes hybrid KV placement
+                     to reduce GC overhead significantly and increases the benefits of using a log. We
+                     first model the benefits of KV separation for different KV pair sizes. We use this
+                     model to classify KV pairs in three categories small, medium, and large. Then, Parallax
+                     uses different approaches for each KV category: It always places large values in a
+                     log and small values in place. For medium values it uses a mixed strategy that combines
+                     the benefits of using a log and eliminates GC overhead as follows: It places medium
+                     values in a log for all but the last few (typically one or two) levels in the LSM
+                     structure, where it performs a full compaction, merges values in place, and reclaims
+                     log space without the need for GC.</p> 
+                  <p>We evaluate Parallax against RocksDB that places all values in place and BlobDB that
+                     always performs KV separation. We find that Parallax increases throughput by up to
+                     12.4x and 17.83x, decreases I/O amplification by up to 27.1x and 26x, and increases
+                     CPU efficiency by up to 18.7x and 28x, respectively, for all but scan-based YCSB workloads.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3487006">Provisioning Differentiated Last-Level Cache Allocations to VMs in Public Clouds</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Mohammad Shahrad</li>
+               <li class="nameList">Sameh Elnikety</li>
+               <li class="nameList Last">Ricardo Bianchini</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Public cloud providers offer access to hardware resources and users rent resources
+                     by choosing among many VM sizes. While users choose the CPU core count and main memory
+                     size per VM, they cannot specify last-level cache (LLC) requirements. LLC is typically
+                     shared among all cores of a modern CPU causing cache contention and performance interference
+                     among co-located VMs. Consequently, a user's only way to avoid this interference is
+                     purchasing a full-server VM to prevent co-tenants. Although researchers have studied
+                     LLC partitioning and despite its availability in commodity processors, LLC QoS has
+                     not been offered to public cloud users today. Existing techniques rely mostly on performance
+                     profiling, which is not feasible in public cloud settings with opaque VMs. Moreover,
+                     prior work does not address how to deliver differentiated LLC allocations at scale.</p> 
+                  <p>In this work, we develop CacheSlicer, the first system that provides cluster-level
+                     support for LLC management in a public cloud. We show how to provide LLC allocations
+                     in a major public cloud provider to enable differentiated VM categories, from which
+                     users select VMs that match their workloads. We integrate it into the Azure VM scheduler
+                     and show its effectiveness through extensive evaluations.</p>
+                  	</div>
+            </div>
+            						
+            					
+            <h2>SESSION: Energy Awareness</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3487015">Latency-Aware Dynamic Server and Cooling Capacity Provisioner for Data Centers</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Anuroop Desu</li>
+               <li class="nameList">Udaya Puvvadi</li>
+               <li class="nameList">Tyler Stachecki</li>
+               <li class="nameList">Sagar Vishwakarma</li>
+               <li class="nameList">Sadegh Khalili</li>
+               <li class="nameList">Kanad Ghose</li>
+               <li class="nameList Last">Bahgat G. Sammakia</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Data center operators generally overprovision IT and cooling capacities to address
+                     unexpected utilization increases that can violate service quality commitments. This
+                     results in energy wastage. To reduce this wastage, we introduce HCP (Holistic Capacity
+                     Provisioner), a service latency aware management system for dynamically provisioning
+                     the server and cooling capacity. Short-term load prediction is used to adjust the
+                     online server capacity to concentrate the workload onto the smallest possible set
+                     of online servers. Idling servers are completely turned off based on a separate long-term
+                     utilization predictor. HCP targets data centers that use chilled air cooling and varies
+                     the cooling provided commensurately, using adjustable aperture tiles and speed control
+                     of the blower fans in the air handler. An HCP prototype supporting a server heterogeneity
+                     is evaluated with real-world workload traces/requests and realizes up to 32% total
+                     energy savings while limiting the 99th-percentile and average latency increases to
+                     at most 6.67% and 3.24%, respectively, against a baseline system where all servers
+                     are kept online.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3487009">Enabling Sustainable Clouds: The Case for Virtualizing the Energy System</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Noman Bashir</li>
+               <li class="nameList">Tian Guo</li>
+               <li class="nameList">Mohammad Hajiesmaili</li>
+               <li class="nameList">David Irwin</li>
+               <li class="nameList">Prashant Shenoy</li>
+               <li class="nameList">Ramesh Sitaraman</li>
+               <li class="nameList">Abel Souza</li>
+               <li class="nameList Last">Adam Wierman</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Cloud platforms' growing energy demand and carbon emissions are raising concern about
+                     their environmental sustainability. The current approach to enabling sustainable clouds
+                     focuses on improving energy-efficiency and purchasing carbon offsets. These approaches
+                     have limits: many cloud data centers already operate near peak efficiency, and carbon
+                     offsets cannot scale to near zero carbon where there is little carbon left to offset.
+                     Instead, enabling sustainable clouds will require applications to adapt to when and
+                     where unreliable low-carbon energy is available. Applications cannot do this today
+                     because their energy use and carbon emissions are not visible to them, as the energy
+                     system provides the rigid abstraction of a continuous, reliable energy supply. This
+                     vision paper instead advocates for a "carbon first" approach to cloud design that
+                     elevates carbon-efficiency to a firs--class metric. To do so, we argue that cloud
+                     platforms should virtualize the energy system by exposing visibility into, and software-defined
+                     control of, it to applications, enabling them to define their own abstractions for
+                     managing energy and carbon emissions based on their own requirements.</p>
+                  	</div>
+            </div>
+            						
+            					
+            <h2>SESSION: Fault Tolerance and Testing</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3487016">OptDebug: Fault-Inducing Operation Isolation for Dataflow Applications</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Muhammad Ali Gulzar</li>
+               <li class="nameList Last">Miryung Kim</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Fault-isolation is extremely challenging in large scale data processing in cloud environments.
+                     Data provenance is a dominant existing approach to isolate data records responsible
+                     for a given output. However, data provenance concerns fault isolation only in the
+                     data-space, as opposed to fault isolation in the code-space---how can we precisely
+                     localize operations or APIs responsible for a given suspicious or incorrect result?</p> 
+                  <p>We present OptDebug that identifies fault-inducing operations in a dataflow application
+                     using three insights. First, debugging is easier with a small-scale input than a large-scale
+                     input. So it uses data provenance to simplify the original input records to a smaller
+                     set leading to test failures and test successes. Second, keeping track of operation
+                     provenance is crucial for debugging. Thus, it leverages automated taint analysis to
+                     propagate the lineage of operations downstream with individual records. Lastly, each
+                     operation may contribute to test failures to a different degree. Thus OptDebug ranks
+                     each operation's spectra---the relative participation frequency in failing vs. passing
+                     tests. In our experiments, OptDebug achieves 100% recall and 86% precision in terms
+                     of detecting faulty operations and reduces the debugging time by 17x compared to a
+                     naïve approach. Overall, OptDebug shows great promise in improving developer productivity
+                     in today's complex data processing pipelines by obviating the need to re-execute the
+                     program repetitively with different inputs and manually examine program traces to
+                     isolate buggy code.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3487011">Falkirk Wheel: Rollback Recovery for Dataflow Systems</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Ionel Gog</li>
+               <li class="nameList">Michael Isard</li>
+               <li class="nameList Last">Martín Abadi</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Data processing applications often combine computations with disparate fault-tolerance
+                     requirements. For example, batch computations prioritize throughput over recovery
+                     latency, and can tolerate recovery delays of up to several minutes, while streaming
+                     computations expect recovery latencies of at most a few seconds. However, state-of-the-art
+                     data systems each offer a single fault-tolerance regime, so complex applications either:
+                     (i) suffer performance degradation in steady state and during recovery due to the
+                     poor fit of the fault-tolerance regime for parts of the applications, or (ii) are
+                     difficult to maintain because they are developed using fragile combinations of batch
+                     and streaming systems that provide different APIs and schedulers, and evolve independently.</p> 
+                  <p>This paper describes Falkirk Wheel, a design for rollback recovery that enables applications
+                     to combine different fault-tolerance regimes. Falkirk Wheel provides a design based
+                     on logical times, which is expressive enough for general applications including incremental
+                     and iterative computations. Our experiments show that an implementation of Falkirk
+                     Wheel in Naiad successfully combines fault-tolerance regimes, with an order of magnitude
+                     lower response latencies in steady state than Naiad's batch-tuned fault-tolerance.
+                     Moreover, Falkirk Wheel is competitive with streaming systems tuned for single fault-tolerance
+                     regimes, as it provides 3-5x lower response latencies than Flink and Drizzle in steady
+                     state and during failure recovery on the Yahoo! Streaming Benchmark.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3487005">Service-Level Fault Injection Testing</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Christopher S. Meiklejohn</li>
+               <li class="nameList">Andrea Estrada</li>
+               <li class="nameList">Yiwen Song</li>
+               <li class="nameList">Heather Miller</li>
+               <li class="nameList Last">Rohan Padhye</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Companies today increasingly rely on microservice architectures to deliver service
+                     for their large-scale mobile or web applications. However, not all developers working
+                     on these applications are distributed systems engineers and therefore do not anticipate
+                     partial failure: where one or more of the dependencies of their service might be unavailable
+                     once deployed into production. Therefore, it is paramount that these issues be raised
+                     early and often, ideally in a testing environment or before the code ships to production.</p> 
+                  <p>In this paper, we present an approach called service-level fault injection testing
+                     and a prototype implementation called Filibuster, that can be used to systematically
+                     identify resilience issues early in the development of microservice applications.
+                     Filibuster combines static analysis and concolicstyle execution with a novel dynamic
+                     reduction algorithm to extend existing functional test suites to cover failure scenarios
+                     with minimal developer effort. To demonstrate the applicability of our tool, we present
+                     a corpus of 4 real-world industrial microservice applications containing bugs. These
+                     applications and bugs are taken from publicly available information of chaos engineering
+                     experiments run by large companies in production. We then demonstrate how all of these
+                     chaos experiments could have been run during development instead, and the bugs they
+                     discovered detected long before they ended up in production.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3486995">Towards Reliable AI for Source Code Understanding</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Sahil Suneja</li>
+               <li class="nameList">Yunhui Zheng</li>
+               <li class="nameList">Yufan Zhuang</li>
+               <li class="nameList">Jim A. Laredo</li>
+               <li class="nameList Last">Alessandro Morari</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Cloud maturity and popularity have resulted in Open source software (OSS) proliferation.
+                     And, in turn, managing OSS code quality has become critical in ensuring sustainable
+                     Cloud growth. On this front, AI modeling has gained popularity in source code understanding
+                     tasks, promoted by the ready availability of large open codebases. However, we have
+                     been observing certain peculiarities with these black-boxes, motivating a call for
+                     their reliability to be verified before offsetting traditional code analysis. In this
+                     work, we highlight and organize different reliability issues affecting AI-for-code
+                     into three stages of an AI pipeline- data collection, model training, and prediction
+                     analysis. We highlight the need for concerted efforts from the research community
+                     to ensure credibility, accountability, and traceability for AI-for-code. For each
+                     stage, we discuss unique opportunities afforded by the source code and software engineering
+                     setting to improve AI reliability.</p>
+                  	</div>
+            </div>
+            						
+            					
+            <h2>SESSION: Microservice Management and Scheduling</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3487003">Characterizing Microservice Dependency and Performance: Alibaba Trace Analysis</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Shutian Luo</li>
+               <li class="nameList">Huanle Xu</li>
+               <li class="nameList">Chengzhi Lu</li>
+               <li class="nameList">Kejiang Ye</li>
+               <li class="nameList">Guoyao Xu</li>
+               <li class="nameList">Liping Zhang</li>
+               <li class="nameList">Yu Ding</li>
+               <li class="nameList">Jian He</li>
+               <li class="nameList Last">Chengzhong Xu</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Loosely-coupled and light-weight microservices running in containers are replacing
+                     monolithic applications gradually. Understanding the characteristics of microservices
+                     is critical to make good use of microservice architectures. However, there is no comprehensive
+                     study about microservice and its related systems in production environments so far.
+                     In this paper, we present a solid analysis of large-scale deployments of microservices
+                     at Alibaba clusters. Our study focuses on the characterization of microservice dependency
+                     as well as its runtime performance. We conduct an in-depth anatomy of microservice
+                     call graphs to quantify the difference between them and traditional DAGs of data-parallel
+                     jobs. In particular, we observe that microservice call graphs are heavy-tail distributed
+                     and their topology is similar to a tree and moreover, many microservices are hot-spots.
+                     We reveal three types of meaningful call dependency that can be utilized to optimize
+                     microservice designs. Our investigation on microservice runtime performance indicates
+                     most microservices are much more sensitive to CPU interference than memory interference.
+                     To synthesize more representative microservice traces, we build a mathematical model
+                     to simulate call graphs. Experimental results demonstrate our model can well preserve
+                     those graph properties observed from Alibaba traces.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3486999">SHOWAR: Right-Sizing And Efficient Scheduling of Microservices</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Ataollah Fatahi Baarzi</li>
+               <li class="nameList Last">George Kesidis</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Microservices architecture have been widely adopted in designing distributed cloud
+                     applications where the application is decoupled into multiple small components (i.e.
+                     "microservices"). One of the challenges in deploying microservices is finding the
+                     optimal amount of resources (i.e. size) and the number of instances (i.e. replicas)
+                     for each microservice in order to maintain a good performance as well as prevent resource
+                     wastage and under-utilization which is not cost-effective. This paper presents SHOWAR,
+                     a framework that configures the resources by determining the number of replicas (horizontal
+                     scaling) and the amount of CPU and Memory for each microservice (vertical scaling).
+                     For vertical scaling, SHOWAR uses empirical variance in the historical resource usage
+                     to find the optimal size and mitigate resource wastage. For horizontal scaling, SHOWAR
+                     uses basic ideas from control theory along with kernel level performance metrics.
+                     Additionally, once the size for each microservice is found, SHOWAR bridges the gap
+                     between optimal resource allocation and scheduling by generating affinity rules (i.e.
+                     hints) for the scheduler to further improve the performance. Our experiments, using
+                     a variety of microservice applications and real-world workloads, show that, compared
+                     to the state-of-the-art autoscaling and scheduling systems, SHOWAR on average improves
+                     the resource allocation by up to 22% while improving the 99th percentile end-to-end
+                     user request latency by 20%.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3486985">Parslo: A Gradient Descent-based Approach for Near-optimal Partial SLO Allotment in Microservices</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Amirhossein Mirhosseini</li>
+               <li class="nameList">Sameh Elnikety</li>
+               <li class="nameList Last">Thomas F. Wenisch</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Modern cloud services are implemented as graphs of loosely-coupled microservices to
+                     improve programmability, reliability, and scalability. Service Level Objectives (SLOs)
+                     define end-to-end latency targets for the entire service to ensure user satisfaction.
+                     In such environments, each microservice is independently deployed and (auto-)scaled.
+                     However, it is unclear how to optimally scale individual microservices when end-to-end
+                     SLOs are violated or underutilized, and how to size each microservice to meet the
+                     end-to-end SLO at minimal total cost. In this paper, we propose Parslo---a Gradient
+                     Descent-based approach to assign partial SLOs among nodes in a microservice graph
+                     under an end-to-end latency SLO. At a high level, the Parslo algorithm breaks the
+                     end-to-end SLO budget into small incremental "SLO units", and iteratively allocates
+                     one marginal SLO unit to the best candidate microservice to achieve the highest total
+                     cost savings until the entire end-to-end SLO budget is exhausted. Parslo achieves
+                     a near-optimal solution, seeking to minimize the total cost for the entire service
+                     deployment, and is applicable to general microservice graphs that comprise patterns
+                     like dynamic branching, parallel fan-out, and microservice dependencies. Parslo reduces
+                     service deployment costs by more than 6x in real microservice-based applications,
+                     compared to a state-of-the-art partial SLO assignment scheme.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3486986">3MileBeach: A Tracer with Teeth</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Jun Zhang</li>
+               <li class="nameList">Robert Ferydouni</li>
+               <li class="nameList">Aldrin Montana</li>
+               <li class="nameList">Daniel Bittman</li>
+               <li class="nameList Last">Peter Alvaro</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>We present 3MileBeach, a tracing and fault injection platform designed for microservice-based
+                     architectures. 3Mile-Beach interposes on the message serialization libraries that
+                     are ubiquitous in this environment, avoiding the application code instrumentation
+                     that tracing and fault injection infrastructures typically require. 3MileBeach provides
+                     message-level distributed tracing at less than 50% of the overhead of the state-of-the-art
+                     tracing frameworks, and fault injection that allows higher precision experiments than
+                     existing solutions. We measure the overhead of 3MileBeach as a tracer and its efficacy
+                     as a fault injector. We qualitatively measure its promise as a platform for tuning
+                     and debugging by sharing concrete use cases in the context of bottleneck identification,
+                     performance tuning, and bug finding. Finally, we use 3MileBeach to perform a novel
+                     type of fault injection - Temporal Fault Injection (TFI), which more precisely controls
+                     individual inter-service message flow with temporal prerequisites, and makes it possible
+                     to catch an entirely new class of fault tolerance bugs.</p>
+                  	</div>
+            </div>
+            						
+            					
+            <h2>SESSION: DB and Query Optimization</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3486980">Version Reconciliation for Collaborative Databases</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Nalin Ranjan</li>
+               <li class="nameList">Zechao Shang</li>
+               <li class="nameList">Sanjay Krishnan</li>
+               <li class="nameList Last">Aaron J. Elmore</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>We propose MindPalace, a prototype of a versioned database for efficient collaborative
+                     data management. MindPalace supports offline collaboration, where users work independently
+                     without real-time correspondence. The core of MindPalace is a critical step of offline
+                     collaboration: reconciling divergent branches made by simultaneous data manipulation.
+                     We formalize the concept of auto-mergeability, a condition under which branches may
+                     be reconciled without human intervention, and propose an efficient framework for determining
+                     whether two branches are auto-mergeable and identifying particular records for manual
+                     reconciliation.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3486975">Scaling Blockchains Using Pipelined Execution and Sparse Peers</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Parth Thakkar</li>
+               <li class="nameList Last">Senthilnathan Natarajan</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Large cloud providers such as AWS and IBM now provide managed blockchain platforms,
+                     showcasing an active interest in blockchains. Unfortunately, blockchains provide poor
+                     performance and scalability. This is true even for the Execute-Order-Validate (EOV)
+                     style of blockchains which improves over the traditional Order-Execute architecture.
+                     We experimentally show that EOV platforms scale poorly using both vertical and horizontal
+                     scaling approaches. We find that the throughput is bottlenecked by the Validation
+                     and Commit phases, which poorly utilize the resources, limiting performance and scalability.</p> 
+                  <p>We introduce three ideas to improve the performance, scalability, and cost-efficiency
+                     of EOV platforms. We first propose a provably correct way to pipeline the Validation
+                     and Commit phases. We then introduce a new type of node called sparse peer that validates
+                     and commits only a subset of transactions. Finally, we propose a technique that makes
+                     it possible for these systems to elastically scale as per the load. Our implementation
+                     provides 3.7x and 2.1x higher throughput than Hyperledger Fabric and FastFabric for
+                     the same infrastructure cost while providing their peak throughputs at 87% and 50%
+                     lower cost. It also makes dynamic horizontal scaling practical by providing 12-26X
+                     faster scale-up times.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3486991">Fast and Accurate Optimizer for Query Processing over Knowledge Graphs</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Jingqi Wu</li>
+               <li class="nameList">Rong Chen</li>
+               <li class="nameList Last">Yubin Xia</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>This paper presents Gpl, a fast and accurate optimizer for query processing over knowledge
+                     graphs. Gpl is novel in three ways. First, Gpl proposes a type-centric approach to
+                     enhance the accuracy of cardinality estimation prominently, which naturally embeds
+                     the correlation of multiple query conditions into the existing type system of knowledge
+                     graphs. Second, to predict execution time accurately, Gpl constructs a specialized
+                     cost model for graph exploration scheme and tunes the coefficients with target hardware
+                     platform and graph data. Third, Gpl further uses a budget-aware strategy for plan
+                     enumeration with a greedy heuristic to boost the overall performance (i.e., optimization
+                     time and execution time) for various workloads. Evaluations with representative knowledge
+                     graphs and query benchmarks show that Gpl can select optimal plans for 33 of 39 queries
+                     and only incurs less than 5% slowdown on average compared to optimal results. In contrast,
+                     the state-of-the-art optimizer and manually tuned results will cause 100% and 36%
+                     slowdown, respectively.</p>
+                  	</div>
+            </div>
+            						
+            					
+            <h2>SESSION: Security Monitoring and Preservation</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3486976">Secure Namespaced Kernel Audit for Containers</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Soo Yee Lim</li>
+               <li class="nameList">Bogdan Stelea</li>
+               <li class="nameList">Xueyuan Han</li>
+               <li class="nameList Last">Thomas Pasquier</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Despite the wide usage of container-based cloud computing, container auditing for
+                     security analysis relies mostly on built-in host audit systems, which often lack the
+                     ability to capture high-fidelity container logs. State-of-the-art reference-monitor-based
+                     audit techniques greatly improve the quality of audit logs, but their system-wide
+                     architecture is too costly to be adapted for individual containers. Moreover, these
+                     techniques typically require extensive kernel modifications, making it difficult to
+                     deploy in practical settings.</p> 
+                  <p>In this paper, we present saBPF (secure audit BPF), an extension of the eBPF framework
+                     capable of deploying secure system-level audit mechanisms at the container granularity.
+                     We demonstrate the practicality of saBPF in Kubernetes by designing an audit framework,
+                     an intrusion detection system, and a lightweight access control mechanism. We evaluate
+                     saBPF and show that it is comparable in performance and security guarantees to audit
+                     systems from the literature that are implemented directly in the kernel.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3486988">Lasagna: Accelerating Secure Deep Learning Inference in SGX-enabled Edge Cloud</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Yuepeng Li</li>
+               <li class="nameList">Deze Zeng</li>
+               <li class="nameList">Lin Gu</li>
+               <li class="nameList">Quan Chen</li>
+               <li class="nameList">Song Guo</li>
+               <li class="nameList">Albert Zomaya</li>
+               <li class="nameList Last">Minyi Guo</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Edge intelligence has already been widely regarded as a key enabling technology in
+                     a variety of domains. Along with the prosperity, increasing concern is raised on the
+                     security and privacy of intelligent applications. As these applications are usually
+                     deployed on shared and untrusted edge servers, malicious co-located attackers, or
+                     even untrustworthy infrastructure providers, may acquire highly security-sensitive
+                     data and code (i.e., the pre-trained model). Software Guard Extensions (SGX) provides
+                     an isolated Trust Execution Environment (TEE) for task security guarantee. However,
+                     we notice that DNN inference performance in SGX is severely affected by the limited
+                     enclave memory space due to the resultant frequent page swapping operations and the
+                     high enclave call overhead. To tackle this problem, we propose Lasagna, an SGX oriented
+                     DNN inference performance acceleration framework without compromising the task security.
+                     Lasagna consists of a local task scheduler and a global task balancer to optimize
+                     the system performance by exploring the layered-structure of DNN models. Our experiment
+                     results show that our layer-aware Lasagna effectively speeds up the well-known DNN
+                     inference in SGX by 1.31x-1.97x.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3486998">Citadel: Protecting Data Privacy and Model Confidentiality for Collaborative Learning</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Chengliang Zhang</li>
+               <li class="nameList">Junzhe Xia</li>
+               <li class="nameList">Baichen Yang</li>
+               <li class="nameList">Huancheng Puyang</li>
+               <li class="nameList">Wei Wang</li>
+               <li class="nameList">Ruichuan Chen</li>
+               <li class="nameList">Istemi Ekin Akkus</li>
+               <li class="nameList">Paarijaat Aditya</li>
+               <li class="nameList Last">Feng Yan</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Many organizations own data but have limited machine learning expertise (data owners).
+                     On the other hand, organizations that have expertise need data from diverse sources
+                     to train truly generalizable models (model owners). With the advancement of machine
+                     learning (ML) and its growing awareness, the data owners would like to pool their
+                     data and collaborate with model owners, such that both entities can benefit from the
+                     obtained models. In such a collaboration, the data owners want to protect the privacy
+                     of its training data, while the model owners desire the confidentiality of the model
+                     and the training method that may contain intellectual properties. Existing private
+                     ML solutions, such as federated learning and split learning, cannot simultaneously
+                     meet the privacy requirements of both data and model owners.</p> 
+                  <p>We present Citadel, a scalable collaborative ML system that protects both data and
+                     model privacy in untrusted infrastructures equipped with Intel SGX. Citadel performs
+                     distributed training across multiple training enclaves running on behalf of data owners
+                     and an aggregator enclave on behalf of the model owner. Citadel establishes a strong
+                     information barrier between these enclaves by zero-sum masking and hierarchical aggregation
+                     to prevent data/model leakage during collaborative training. Compared with existing
+                     SGX-protected systems, Citadel achieves better scalability and stronger privacy guarantees
+                     for collaborative ML. Cloud deployment with various ML models shows that Citadel scales
+                     to a large number of enclaves with less than 1.73X slowdown.</p>
+                  	</div>
+            </div>
+            						
+            					
+            <h2>SESSION: Serverless Platforms II</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3487013">Tell me when you are sleepy and what may wake you up!</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Djob Mvondo</li>
+               <li class="nameList">Antonio Barbalace</li>
+               <li class="nameList">Alain Tchana</li>
+               <li class="nameList Last">Gilles Muller</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Nowadays, there is a shift in the deployment model of Cloud and Edge applications.
+                     Applications are now deployed as a set of several small units communicating with each
+                     other - the microservice model. Moreover, each unit - a microservice, may be implemented
+                     as a virtual machine, container, function, etc., spanning the different Cloud and
+                     Edge service models including IaaS, PaaS, FaaS. A microservice is instantiated upon
+                     the reception of a request (e.g., an http packet or a trigger), and a rack-level or
+                     data-center-level scheduler decides the placement for such unit of execution considering
+                     for example data locality and load balancing. With such a configuration, it is common
+                     to encounter scenarios where different units, as well as multiple instances of the
+                     same unit, may be running on a single server at the same time.</p> 
+                  <p>When multiple microservices are running on the same server not necessarily all of
+                     them are doing actual processing, some may be busy-waiting - i.e., waiting for events
+                     (or requests) sent by other units. However, these "idle" units are consuming CPU time
+                     which could be used by other running units or cloud utility functions on the server
+                     (e.g., monitoring daemons). In a controlled experiment, we observe that units can
+                     spend up to 20% - 55% of their CPU time waiting, thus a great amount of CPU time is
+                     wasted; these values significantly grow when overcommitting CPU resources (i.e., units
+                     CPU reservations exceed server CPU capacity), where we observe up to 69% - 75%. This
+                     is a result of the lack of information/context about what is running in each unit
+                     from the server CPU scheduler perspective.</p> 
+                  <p>In this paper, we first provide evidence of the problem and discuss several research
+                     questions. Then, we propose an handful of solutions worth exploring that consists
+                     in revisiting hypervisor and host OS scheduler designs to reduce the CPU time wasted
+                     on idle units. Our proposal leverages the concepts of informed scheduling, and monitoring
+                     for internal and external events. Based on the aforementioned solutions, we propose
+                     our initial implementation on Linux/KVM.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3486979">ServerMore: Opportunistic Execution of Serverless Functions in the Cloud</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Amoghavarsha Suresh</li>
+               <li class="nameList Last">Anshul Gandhi</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Serverless computing allows customers to submit their jobs to the cloud for execution,
+                     with the resource provisioning being taken care of by the cloud provider. Serverless
+                     functions are often short-lived and have modest resource requirements, thereby presenting
+                     an opportunity to improve server utilization by colocating with latency-sensitive
+                     customer workloads. This paper presents ServerMore, a server-level resource manager
+                     that opportunistically colocates customer serverless jobs with serverful customer
+                     VMs. ServerMore dynamically regulates the CPU, memory bandwidth, and LLC resources
+                     on the server to ensure that the colocation between serverful and serverless workloads
+                     does not impact application tail latencies. By selectively admitting serverless functions
+                     and inferring the performance of black-box serverful workloads, ServerMore improves
+                     resource utilization on average by 35.9% to 245% compared to prior works; while having
+                     a minimal impact on the latency of both serverful applications and serverless functions.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3486982">Speedo: Fast dispatch and orchestration of serverless workflows</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Nilanjan Daw</li>
+               <li class="nameList">Umesh Bellur</li>
+               <li class="nameList Last">Purushottam Kulkarni</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Structuring cloud applications as collections of interacting fine-grained microservices
+                     makes them scalable and affords the flexibility of hot upgrading parts of the application.
+                     The current avatar of serverless computing (FaaS) with its dynamic resource allocation
+                     and auto-scaling capabilities make it the deployment model of choice for such applications.
+                     FaaS platforms operate with user space dispatchers that receive requests over the
+                     network and make a dispatch decision to one of multiple workers (usually a container)
+                     distributed in the data center. With the granularity of microservices approaching
+                     execution times of a few milliseconds combined with loads approaching tens of thousands
+                     of requests a second, having a low dispatch latency of less than one millisecond becomes
+                     essential to keep up with line rates. When these microservices are part of a workflow
+                     making up an application, the orchestrator that coordinates the sequence in which
+                     microservices execute also needs to operate with microsecond latency. Our observations
+                     reveal that the most significant component of the dispatch/orchestration latency is
+                     the time it takes for the request to traverse into and out of the user space from
+                     the network. Motivated by the presence of a multitude of low power cores on today's
+                     SmartNICs, one approach to keeping up with these high line rates and the stringent
+                     latency expectations is to run both the dispatcher and the orchestrator close to the
+                     network on a SmartNIC. Doing so will save valuable cycles spent in transferring requests
+                     to and back from the user space. The operating characteristics of short-lived ephemeral
+                     state and low CPU burst requirements of FaaS dispatcher/orchestrator make them ideal
+                     candidates for offloading from the server to the NIC cores. This also brings other
+                     benefit of freeing up the server CPU. In this paper, we present Speedo--- a design
+                     for offloading of FaaS dispatch and orchestration services to the SmartNIC from the
+                     user space. We implemented Speedo on ASIC based Netronome Agilio SmartNICs and our
+                     comprehensive evaluation shows that Speedo brings down the dispatch latency from ~150ms
+                     to ~140μs at a load of 10K requests per second.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3487002">On Merits and Viability of Multi-Cloud Serverless</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Ataollah Fatahi Baarzi</li>
+               <li class="nameList">George Kesidis</li>
+               <li class="nameList">Carlee Joe-Wong</li>
+               <li class="nameList Last">Mohammad Shahrad</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Serverless computing is a rapidly growing paradigm in the cloud industry that envisions
+                     functions as the computational building blocks of an application. Instead of forcing
+                     the application developer to provision cloud resources for their application, the
+                     cloud provider provisions the required resources for each function "under the hood."
+                     In this work, we envision virtual serverless providers (VSPs) to aggregate serverless
+                     offerings. In doing so, VSPs allow developers (and businesses) to get rid of vendor
+                     lock-in problems and exploit pricing and performance variation across providers by
+                     adaptively utilizing the best provider at each time, forcing the providers to compete
+                     to offer cheaper and superior services. We discuss the merits of a VSP and show that
+                     serverless systems are well-suited to cross-provider aggregation, compared to virtual
+                     machines. We propose a VSP system architecture and implement an initial version. Using
+                     experimental evaluations, our preliminary results show that a VSP can improve maximum
+                     sustained throughput by 1.2x to 4.2x, reduces SLO violations by 98.8%, and improves
+                     the total invocations' costs by 54%.</p>
+                  	</div>
+            </div>
+            						
+            					
+            <h2>SESSION: Efficient, Robust ML Training and Inference II</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3486978">Chronus: A Novel Deadline-aware Scheduler for Deep Learning Training Jobs</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Wei Gao</li>
+               <li class="nameList">Zhisheng Ye</li>
+               <li class="nameList">Peng Sun</li>
+               <li class="nameList">Yonggang Wen</li>
+               <li class="nameList Last">Tianwei Zhang</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Modern GPU clusters support Deep Learning training (DLT) jobs in a distributed manner.
+                     Job scheduling is the key to improve the training performance, resource utilization
+                     and fairness across users. Different training jobs may require various objectives
+                     and demands in terms of completion time. How to efficiently satisfy all these requirements
+                     is not extensively studied.</p> 
+                  <p>We present Chronus, an end-to-end scheduling system to provide deadline guarantee
+                     for SLO jobs and maximize the performance of best-effort jobs. Chronus is designed
+                     based on the unique features of DLT jobs. (1) It leverages the intra-job predictability
+                     of DLT processes to efficiently profile jobs and estimate their runtime speed with
+                     dynamic resource scaling. (2) It takes advantages of the DLT preemption feature to
+                     select jobs with a lease-based training scheme. (3) It considers the placement sensitivity
+                     of DLT jobs to allocate resources with new consolidation and local-search strategies.
+                     Large-scale simulations on real-world job traces show that Chronus can reduce the
+                     deadline miss rate of SLO jobs by up to 14.7x, and the completion time of best-effort
+                     jobs by up to 19.9x, compared to existing schedulers. We also implement a prototype
+                     of Chronus atop Kubernents in a cluster of 120 GPUs to validate its practicability.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3486993">Scrooge: A Cost-Effective Deep Learning Inference System</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Yitao Hu</li>
+               <li class="nameList">Rajrup Ghosh</li>
+               <li class="nameList Last">Ramesh Govindan</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Advances in deep learning (DL) have prompted the development of cloud-hosted DL-based
+                     media applications that process video and audio streams in real-time. Such applications
+                     must satisfy throughput and latency objectives and adapt to novel types of dynamics,
+                     while incurring minimal cost. Scrooge, a system that provides media applications as
+                     a service, achieves these objectives by packing computations efficiently into GPU-equipped
+                     cloud VMs, using an optimization formulation to find the lowest cost VM allocations
+                     that meet the performance objectives, and rapidly reacting to variations in input
+                     complexity (e.g., changes in participants in a video). Experiments show that Scrooge
+                     can save serving cost by 16-32% (which translate to tens of thousands of dollars per
+                     year) relative to the state-of-the-art while achieving latency objectives for over
+                     98% under dynamic workloads.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3486987">Morphling: Fast, Near-Optimal Auto-Configuration for Cloud-Native Model Serving</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Luping Wang</li>
+               <li class="nameList">Lingyun Yang</li>
+               <li class="nameList">Yinghao Yu</li>
+               <li class="nameList">Wei Wang</li>
+               <li class="nameList">Bo Li</li>
+               <li class="nameList">Xianchao Sun</li>
+               <li class="nameList">Jian He</li>
+               <li class="nameList Last">Liping Zhang</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Machine learning models are widely deployed in production cloud to provide online
+                     inference services. Efficiently deploying inference services requires careful tuning
+                     of hardware and runtime configurations (e.g., GPU type, GPU memory, batch size), which
+                     can significantly improve the model serving performance and reduce cost. However,
+                     existing autoconfiguration approaches for general workloads, such as Bayesian optimization
+                     and white-box prediction, are inefficient in navigating the high-dimensional configuration
+                     space of model serving, incurring high sampling cost.</p> 
+                  <p>In this paper, we present Morphling, a fast, near-optimal auto-configuration framework
+                     for cloud-native model serving. Morphling employs model-agnostic meta-learning to
+                     navigate the large configuration space. It trains a metamodel offline to capture the
+                     general performance trend under varying configurations. Morphling quickly adapts the
+                     metamodel to a new inference service by sampling a small number of configurations
+                     and uses it to find the optimal one. We have implemented Morphling as an auto-configuration
+                     service in Kubernetes, and evaluate its performance with popular CV and NLP models,
+                     as well as the production inference services in Alibaba. Compared with existing approaches,
+                     Morphling reduces the median search cost by 3x-22x, quickly converging to the optimal
+                     configuration by sampling only 30 candidates in a large search space consisting of
+                     720 options.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3472883.3486996">Clamor: Extending Functional Cluster Computing Frameworks with Fine-Grained Remote Memory
+                  Access</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Pratiksha Thaker</li>
+               <li class="nameList">Hudson Ayers</li>
+               <li class="nameList">Deepti Raghavan</li>
+               <li class="nameList">Ning Niu</li>
+               <li class="nameList">Philip Levis</li>
+               <li class="nameList Last">Matei Zaharia</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>We propose Clamor, a functional cluster computing framework that adds support for
+                     fine-grained, transparent access to global variables for distributed, data-parallel
+                     tasks. Clamor targets workloads that perform sparse accesses and updates within the
+                     bulk synchronous parallel execution model, a setting where the standard technique
+                     of broadcasting global variables is highly inefficient. Clamor implements a novel
+                     dynamic replication mechanism in order to enable efficient access to popular data
+                     regions on the fly, and tracks finegrained dependencies in order to retain the lineage-based
+                     fault tolerance model of systems like Spark. Clamor can integrate with existing Rust
+                     and C++ libraries to transparently distribute programs on the cluster. We show that
+                     Clamor is competitive with Spark in simple functional workloads and can improve performance
+                     significantly compared to custom systems on workloads that sparsely access large global
+                     variables: from 5x for sparse logistic regression to over 100x on distributed geospatial
+                     queries.</p>
+                  	</div>
+            </div>
+            						
+            					</div>
+      </div>
+   </body>
+</html>
