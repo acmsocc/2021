@@ -489,6 +489,12 @@ day4:
   chair: Utku Sirin, Harvard University 
 - end: 12:15 PM
   start: 11:15 AM
-  talks: []
-  title: Panel (TBA)
+  talks:
+  - authors:
+    - Raghu Ramakrishnan (Microsoft) 
+    - Jennifer Rexford (Princeton)
+    - Hakim Weatherspoon (Cornell)
+    - Simon Peter (UT Austin)
+  title: Panel (Open Research Problems in the Cloud)
+  chair: Magdalena Balazinska, University of Washington 
 
