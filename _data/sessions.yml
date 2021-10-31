@@ -300,7 +300,8 @@ day2:
 - end: 2:00 PM
   start: 1:00 PM
   talks: []
-  title: Lunch  
+  title: Lunch + Panel (Research environment and Diversity in Cloud Computing)
+  chair: Neeraja Yadwadkar (VMware Research and UT Austin) 
 - end: 8:00 PM
   start: 6:30 PM
   talks: 
@@ -495,6 +496,7 @@ day4:
     - Jennifer Rexford (Princeton)
     - Hakim Weatherspoon (Cornell)
     - Simon Peter (UT Austin)
+    - Fatma Ozcan (Google) 
   title: Panel (Open Research Problems in the Cloud)
   chair: Magdalena Balazinska, University of Washington 
 
