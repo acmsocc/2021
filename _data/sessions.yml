@@ -299,7 +299,12 @@ day2:
   chair: Pedro Fonseca, Purdue University 
 - end: 2:00 PM
   start: 1:00 PM
-  talks: []
+  talks:
+  - authors:
+    - John Wilkes (Google) 
+    - Rodrigo Fonseca (Microsoft Research)
+    - Dilma Da Silva (TAMU) 
+    - Akshitha Sriraman (CMU) 
   title: Lunch + Panel (Research environment and Diversity in Cloud Computing)
   chair: Neeraja Yadwadkar (VMware Research and UT Austin) 
 - end: 8:00 PM
@@ -347,15 +352,19 @@ day3:
     title: '3MileBeach: A Tracer with Teeth'
   title: Session 9 (Microservice management and scheduling)
   chair: Raja Sambasivan, Tufts University
-- end: 10:15 AM
+- end: 10:45 AM
   start: 10:00 AM
   title: Break
   talks: []
-- end: 11:15 AM
-  start: 10:15 AM
+- end: 10:50 AM
+  start: 10:45 AM
   talks: 
-  title: Award Announcement + Test of Time
-  chair: 
+  title: Best Paper and Test of Time award announcement
+  chair: Phillip B. Gibbons, CMU (virtual)
+- end: 11:30 AM
+  start: 10:50 AM
+  talks: 
+  title: Test of Time talk
 - end: 11:30 AM
   start: 11:15 AM
   talks: []
