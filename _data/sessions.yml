@@ -204,12 +204,12 @@ day2:
     title: 'George: Learning to Place Long-Lived Containers in Large Clusters with Operation Constraints'
   title: Session 5 (Improving cloud deployments for users)
   chair: Puru Kulkarni, IIT Bombay (virtual) 
-- end: 10:15 AM
+- end: 10:30 AM
   start: 10:00 AM
   title: Break
   talks: []
-- end: 11:15 AM
-  start: 10:15 AM
+- end: 11:30 AM
+  start: 10:30 AM
   talks: 
   - authors:
     - Mathias Lecuyer (University of British Columbia)
@@ -241,34 +241,10 @@ day2:
     title: 'Provisioning Differentiated Last-Level Cache Allocations to VMs in Public Clouds'
   title: Session 6 (Helping users deploy cloud apps)
   chair: Sanjay Rao, Purdue University (virtual) 
-- end: 11:30 AM
-  start: 11:15 AM
-  talks: []
-  title: Break
 - end: 12:00 PM
   start: 11:30 AM
-  talks:
-  - authors:
-    - Anuroop Desu
-    - Udaya Puvvadi
-    - Tyler Stachecki
-    - Sagar Vishwakarma
-    - Sadegh Khalili
-    - Kanad Ghose
-    - Bahgat G Sammakia (State University of New York, Binghamton)
-    title: 'Latency-Aware Dynamic Server and Cooling Capacity Provisioner for Data Centers'
-  - authors:
-    - Noman Bashir (University of Massachusetts Amherst)
-    - Tian Guo (Worcester Polytechnic Institute)
-    - Mohammad Hajiesmaili
-    - David Irwin
-    - Prashant Shenoy
-    - Ramesh Sitaraman
-    - Abel Souza (University of Massachusetts, Amherst)
-    - Adam Wierman (Caltech)
-    title: 'Enabling Sustainable Clouds: The Case for Virtualizing the Energy System (vision)'
-  title: Session 7 (Energy awareness)
-  chair: Rebecca Taft, Cockroach Labs (virtual) 
+  talks: []
+  title: Break
 - end: 1:00 PM
   start: 12:00 PM
   talks:
@@ -307,6 +283,30 @@ day2:
     - Akshitha Sriraman (CMU) 
   title: Lunch + Panel (Research environment and Diversity in Cloud Computing)
   chair: Neeraja Yadwadkar (VMware Research and UT Austin) 
+- end: 2:30 PM
+  start: 2:00 PM
+  talks:
+  - authors:
+    - Anuroop Desu
+    - Udaya Puvvadi
+    - Tyler Stachecki
+    - Sagar Vishwakarma
+    - Sadegh Khalili
+    - Kanad Ghose
+    - Bahgat G Sammakia (State University of New York, Binghamton)
+    title: 'Latency-Aware Dynamic Server and Cooling Capacity Provisioner for Data Centers'
+  - authors:
+    - Noman Bashir (University of Massachusetts Amherst)
+    - Tian Guo (Worcester Polytechnic Institute)
+    - Mohammad Hajiesmaili
+    - David Irwin
+    - Prashant Shenoy
+    - Ramesh Sitaraman
+    - Abel Souza (University of Massachusetts, Amherst)
+    - Adam Wierman (Caltech)
+    title: 'Enabling Sustainable Clouds: The Case for Virtualizing the Energy System (vision)'
+  title: Session 7 (Energy awareness)
+  chair: Rebecca Taft, Cockroach Labs (virtual) 
 - end: 8:00 PM
   start: 6:30 PM
   talks: 
