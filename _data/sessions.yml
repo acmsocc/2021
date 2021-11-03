@@ -365,10 +365,6 @@ day3:
   start: 10:50 AM
   talks: 
   title: Test of Time talk
-- end: 11:30 AM
-  start: 11:15 AM
-  talks: []
-  title: Break
 - end: 12:15 PM
   start: 11:30 AM
   talks:
@@ -389,8 +385,12 @@ day3:
     title: 'Fast and Accurate Optimizer for Query Processing over Knowledge Graphs'
   title: Session 10 (DB and query optimization)
   chair: Venkatesh Emani, Microsoft Gray Systems Lab (virtual) 
-- end: 1:00 PM
+- end: 12:30 PM
   start: 12:15 PM
+  talks: []
+  title: Break
+- end: 1:15 PM
+  start: 12:30 PM
   talks:
   - authors:
     - Soo Yee Lim (University of British Columbia)
@@ -420,8 +420,8 @@ day3:
     title: 'Citadel: Protecting Data Privacy and Model Confidentiality for Collaborative Learning'
   title: Session 11 (Security monitoring and preservation)
   chair: Eric Keller, University of Colorado Boulder (virtual) 
-- end: 2:00 PM
-  start: 1:00 PM
+- end: 2:15 PM
+  start: 1:15 PM
   talks: []
   title: Lunch  
 day4:
