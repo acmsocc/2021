@@ -333,7 +333,7 @@ day3:
     - Yu Ding
     - Jian He (Alibaba Group) 
     - Chengzhong Xu (University of Macau)
-    title: 'Characterizing Microservice Dependency and Performance: Alibaba Trace Analysis'
+    title: 'Characterizing Microservice Dependency and Performance: Alibaba Trace Analysis (BEST PAPER AWARD)'
   - authors:
     - Ata Fatahi
     - George Kesidis (Penn State University)
@@ -364,7 +364,14 @@ day3:
 - end: 11:30 AM
   start: 10:50 AM
   talks: 
-  title: Test of Time talk
+  - authors:
+    - Charles Reiss (UC Berkeley) 
+    - Alexey Tumanov (CMU)
+    - Gregory R. Ganger (CMU)
+    - Randy Katz (UC Berkeley)
+    - Michael Kozuch (Intel Labs)
+    title: 'Heterogeneity and Dynamicity of Clouds at Scale: Google Trace Analysis (SoCC 2012)'
+  title: Test of Time talk - Alexey Tumanov
 - end: 12:15 PM
   start: 11:30 AM
   talks:
